@@ -11,7 +11,6 @@ import {
   ResponsiveContainer,
   XAxis,
   YAxis,
-  Legend,
   Line,
   PieChart,
   Pie,
