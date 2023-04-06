@@ -94,7 +94,7 @@ const Row3 = () => {
         />
         <Box
           mt="0.5rem"
-          padding="0 0.5rem"
+          p="0 0.5rem"
           height="75%"
           sx={{
             "& .MuiDataGrid-root": {
@@ -128,7 +128,7 @@ const Row3 = () => {
         />
         <Box
           mt="1rem"
-          padding="0 0.5rem"
+          p="0 0.5rem"
           height="80%"
           sx={{
             "& .MuiDataGrid-root": {
@@ -157,20 +157,15 @@ const Row3 = () => {
       </DashboardBox>
       <DashboardBox gridArea="i">
         <BoxHeader title="Expense Breakdown by Category" sideText="+4%" />
-        <FlexBetween
-          mt="0.5rem"
-          gap="0.5rem"
-          padding="0 1rem"
-          textAlign="center"
-        >
+        <FlexBetween mt="0.5rem" gap="0.5rem" p="0 1rem" textAlign="center">
           {pieChartData?.map((data, i) => (
-            <Box key={`${data[0].name} - ${i}`}>
-              <PieChart width={110} height={100}>
+            <Box key={`${data[0].name}-${i}`}>
+              <PieChart width={70} height={80}>
                 <Pie
                   stroke="none"
                   data={data}
                   innerRadius={18}
-                  outerRadius={38}
+                  outerRadius={35}
                   paddingAngle={2}
                   dataKey="value"
                 >
@@ -203,12 +198,10 @@ const Row3 = () => {
           ></Box>
         </Box>
         <Typography margin="0 1rem" variant="h6">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum a
-          repudiandae explicabo, reiciendis, architecto laboriosam dicta saepe
-          quis consequuntur aspernatur ipsa ea veritatis. Voluptates, quidem
-          illo saepe nisi provident unde! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Aliquam maxime deserunt quam labore neque, totam
-          tempora libero ipsum quaerat?  
+          Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
+          ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
+          molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
+          sed. In volutpat nullam at est id cum pulvinar nunc.
         </Typography>
       </DashboardBox>
     </>
